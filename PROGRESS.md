@@ -1,11 +1,34 @@
 # 项目进度
 
 ## 当前状态
-- **阶段**: SEO/GEO优化完成
-- **任务**: 网站已完成，等待审核
+- **阶段**: 已部署上线
+- **任务**: 网站已完成并部署
 - **状态**: ✅ 已完成
 
+## 线上地址
+- **GitHub**: https://github.com/derek33808/claude-luxe-home-store
+- **Netlify**: https://claude-luxe-home.netlify.app
+
 ## 执行日志（按时间倒序）
+
+### 2026-01-22
+**任务**: 部署到 GitHub 和 Netlify
+**状态**: ✅ 完成
+
+**完成内容**:
+- [x] 初始化 Git 仓库
+- [x] 创建 GitHub 仓库 (claude-luxe-home-store)
+- [x] 推送代码到 GitHub
+- [x] 使用 Netlify CLI 创建站点
+- [x] 部署到 Netlify
+- [x] 更新 sitemap/robots.txt/index.html 使用实际域名
+
+**部署信息**:
+- GitHub: https://github.com/derek33808/claude-luxe-home-store
+- Netlify: https://claude-luxe-home.netlify.app
+- Site ID: 244ceef6-b72b-46d7-b37a-624686c56809
+
+---
 
 ### 2026-01-22
 **任务**: 添加 sitemap.xml 和 robots.txt
