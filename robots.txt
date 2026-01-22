@@ -1,0 +1,60 @@
+# robots.txt for LUXE HOME
+# https://www.luxehome.com
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.luxehome.com/sitemap.xml
+
+# Crawl-delay (optional, be polite to servers)
+Crawl-delay: 1
+
+# Block sensitive directories (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /*.json$
+
+# Allow important resources for rendering
+Allow: /styles.css
+Allow: /script.js
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Specific bot rules
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# AI Search Engines (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /

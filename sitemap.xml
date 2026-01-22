@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.luxehome.com/</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Product Page: Smart Digital Calendar -->
+    <url>
+        <loc>https://www.luxehome.com/products/smart-digital-calendar</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://m.media-amazon.com/images/I/61CBS64TYsL.jpg</image:loc>
+            <image:title>Smart Digital Calendar 15.6-inch Wall Planner</image:title>
+            <image:caption>Smart Digital Calendar with touchscreen display for family organization</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://m.media-amazon.com/images/I/51QsFhngk1L.jpg</image:loc>
+            <image:title>Smart Digital Calendar Calendar View</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://m.media-amazon.com/images/I/51jplAj8KEL.jpg</image:loc>
+            <image:title>Smart Digital Calendar Chore Chart Feature</image:title>
+        </image:image>
+    </url>
+
+    <!-- Collection Page -->
+    <url>
+        <loc>https://www.luxehome.com/collection</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://www.luxehome.com/about</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Contact Page -->
+    <url>
+        <loc>https://www.luxehome.com/contact</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- FAQ Page -->
+    <url>
+        <loc>https://www.luxehome.com/faq</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
