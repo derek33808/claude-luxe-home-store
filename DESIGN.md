@@ -213,6 +213,37 @@ luxe-home-store/
 2. 添加用户账户系统
 3. 实现产品搜索功能
 4. 添加更多产品到目录
-5. 部署到生产环境
-6. 配置 Google Analytics / Search Console
-7. 启动 SEO/GEO 推广活动
+5. 配置 Google Analytics / Search Console
+6. 启动 SEO/GEO 推广活动
+
+## 域名更换指南
+
+当前为 Demo 环境，正式上线时需更换域名。
+
+### 需要更新的文件
+```bash
+# 将 OLD_DOMAIN 替换为 NEW_DOMAIN
+sed -i '' 's|https://claude-luxe-home.netlify.app|https://新域名.com|g' sitemap.xml robots.txt index.html
+```
+
+### 具体更新位置
+1. **sitemap.xml** - 所有 `<loc>` 标签中的 URL
+2. **robots.txt** - Sitemap 路径
+3. **index.html**:
+   - `<link rel="canonical">`
+   - `<meta property="og:url">`
+   - `<meta name="twitter:url">`
+   - Schema.org JSON-LD 中的 URL
+
+### Netlify 配置
+1. 进入 Netlify 后台 → Domain settings
+2. 添加自定义域名
+3. 配置 DNS（CNAME 或 A 记录）
+4. 启用 HTTPS（自动 Let's Encrypt）
+
+### 部署命令
+```bash
+# 更新后重新部署
+git add -A && git commit -m "Update to production domain" && git push
+netlify deploy --prod --dir=.
+```
