@@ -1,12 +1,12 @@
 # robots.txt for LUXE HOME
-# https://www.luxehome.com
+# https://claude-luxe-home.netlify.app
 
 # Allow all search engines
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.luxehome.com/sitemap.xml
+Sitemap: https://claude-luxe-home.netlify.app/sitemap.xml
 
 # Crawl-delay (optional, be polite to servers)
 Crawl-delay: 1
