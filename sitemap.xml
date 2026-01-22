@@ -63,4 +63,17 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Product Page: Mini Arcade Machine -->
+    <url>
+        <loc>https://claude-luxe-home.netlify.app/products/mini-arcade-machine</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://m.media-amazon.com/images/I/61clBNZmpYL.jpg</image:loc>
+            <image:title>Mini Arcade Machine 240 Games</image:title>
+            <image:caption>Retro handheld gaming console with 240 built-in 8-bit games</image:caption>
+        </image:image>
+    </url>
+
 </urlset>

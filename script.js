@@ -83,6 +83,30 @@ function removeFromCart(productId) {
     updateCart();
 }
 
+// Add product to cart by ID (for product cards)
+function addProductToCart(productId) {
+    const catalogProduct = ProductCatalog.getById(productId);
+    if (!catalogProduct) return;
+
+    const existingItem = cart.find(item => item.id === productId);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            id: catalogProduct.id,
+            name: catalogProduct.name,
+            price: catalogProduct.price,
+            image: catalogProduct.images[0],
+            color: catalogProduct.colors[0]?.name || 'Default',
+            quantity: 1
+        });
+    }
+
+    updateCart();
+    showToast();
+}
+
 function updateCart() {
     // Update cart count
     cartCount = cart.reduce((total, item) => total + item.quantity, 0);
@@ -482,8 +506,54 @@ const ProductCatalog = {
                 description: 'Shop the Smart Digital Calendar with 15.6-inch touchscreen. Perfect family organizer with Wi-Fi sync, chore chart, and meal planner. No subscription fees.',
                 keywords: ['smart calendar', 'digital calendar', 'family organizer', 'wall calendar', 'touchscreen calendar']
             }
+        },
+        {
+            id: 2,
+            sku: 'ORB-ARCADE-240',
+            name: 'Mini Arcade Machine - 240 Built-In 8-Bit Games',
+            slug: 'mini-arcade-machine',
+            brand: 'Orb Gaming by ThumbsUp!',
+            price: 29.99,
+            originalPrice: 39.99,
+            currency: 'USD',
+            description: '2.5" Full Colour Screen, 8-Way Joystick, Handheld Retro Games Console',
+            features: [
+                'Hours of Entertainment - 240 retro arcade games',
+                'Nostalgic Gameplay - Authentic 8-way joystick',
+                '2.5" Full Colour Screen Display',
+                'Upgrade Your Space - Fun desk gadget',
+                'Classic Retro Gaming Experience',
+                'Compact & Portable Design'
+            ],
+            specifications: {
+                screen: '2.5 inches',
+                display: 'Full Colour LCD',
+                games: '240 Built-In 8-Bit Games',
+                controls: '8-Way Joystick',
+                type: 'Handheld Retro Console'
+            },
+            images: [
+                'https://m.media-amazon.com/images/I/41tJgzNw+rL.jpg',
+                'https://m.media-amazon.com/images/I/516-xE+bJ3L.jpg',
+                'https://m.media-amazon.com/images/I/61clBNZmpYL.jpg',
+                'https://m.media-amazon.com/images/I/51onzFWSziL.jpg',
+                'https://m.media-amazon.com/images/I/51-tmGi6wIL.jpg'
+            ],
+            colors: [
+                { name: 'Classic Black', hex: '#1a1a1a' }
+            ],
+            rating: 4.4,
+            reviewCount: 2485,
+            inStock: true,
+            stockQuantity: 50,
+            category: 'Gaming',
+            tags: ['arcade', 'retro gaming', 'handheld console', '8-bit games', 'mini arcade'],
+            seo: {
+                title: 'Mini Arcade Machine 240 Games | Retro Gaming | LUXE HOME',
+                description: 'Shop the Mini Arcade Machine with 240 built-in 8-bit games. Features 2.5" colour screen and 8-way joystick. Perfect retro gaming gift.',
+                keywords: ['mini arcade', 'retro games', 'handheld console', '8-bit games', 'arcade machine']
+            }
         }
-        // Add more products here as the catalog grows
     ],
 
     // Get product by ID
